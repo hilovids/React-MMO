@@ -12,7 +12,7 @@ namespace TBMMO_Backend.Models.PlayerCharacter
         // Another option is more objects, but idk quite how I feel about that. 
         // I will add this to the trello
         public RelationshipType RelationshipType { get; set; }
-        public string Recipient { get; set; }
+        public string RecipientName { get; set; } // represents name of NPC, Location, or Organization
         public int MaxValue
         {
             get
