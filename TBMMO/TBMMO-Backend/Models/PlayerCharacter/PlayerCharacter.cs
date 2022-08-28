@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace TBMMO_Backend.Models
+namespace TBMMO_Backend.Models.PlayerCharacter
 {
     public class PlayerCharacter
     {

@@ -1,4 +1,4 @@
-﻿namespace TBMMO_Backend.Models
+﻿namespace TBMMO_Backend.Models.Items
 {
     public class Item
     {

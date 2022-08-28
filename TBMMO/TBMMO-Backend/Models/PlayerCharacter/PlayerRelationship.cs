@@ -1,6 +1,6 @@
 ﻿using TBMMO_Backend.Data;
 
-namespace TBMMO_Backend.Models
+namespace TBMMO_Backend.Models.PlayerCharacter
 {
     public class PlayerRelationship : ITrainable
     {

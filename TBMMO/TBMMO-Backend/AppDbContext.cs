@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TBMMO_Backend.Models;
+using TBMMO_Backend.Models.PlayerCharacter;
 
 namespace TBMMO_Backend
 {
