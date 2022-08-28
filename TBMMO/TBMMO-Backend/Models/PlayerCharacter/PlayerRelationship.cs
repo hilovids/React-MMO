@@ -11,13 +11,22 @@ namespace TBMMO_Backend.Models.PlayerCharacter
         // AN option is to use an enum to specify the type of relationship, and then go about it as normal. But that might not be good from the NPC/Location/Org side of things. 
         // Another option is more objects, but idk quite how I feel about that. 
         // I will add this to the trello
+        public RelationshipType RelationshipType { get; set; }
+        public string Recipient { get; set; }
         public int MaxValue
         {
             get
             {
-                return 0;
+                return 1000;
             }
         }
         public int Value { get; set; }
+    }
+
+    public enum RelationshipType
+    {
+        NPC,
+        Location,
+        Organization
     }
 }
