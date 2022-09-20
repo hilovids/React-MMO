@@ -41,8 +41,8 @@ namespace TBMMO_Backend.Controllers
             var inventory = new Inventory() { PlayerCharacterName = player.Name };
             db.Inventory.Add(inventory);
             db.SaveChanges();
-            var startingBag = new Bag() { InventoryId = inventory.Id };
-            db.Add(startingBag);
+            var startingBag = new Bag() { InventoryId = inventory.Id, Slots = 8};
+            db.Bags.Add(startingBag);
             db.SaveChanges();
             return player;
         }
