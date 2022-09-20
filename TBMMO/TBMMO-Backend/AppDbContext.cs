@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TBMMO_Backend.Models.Items;
 using TBMMO_Backend.Models.PlayerCharacter;
 
 namespace TBMMO_Backend
@@ -10,8 +11,11 @@ namespace TBMMO_Backend
         public DbSet<ProfessionSheet> ProfessionSheets { get; set; }
         public DbSet<RelationshipSheet> RelationshipSheets { get; set; }
         public DbSet<StatSheet> StatSheets { get; set; }
-        public DbSet<PlayerCharacter> Inventory { get; set; }
-        public DbSet<PlayerCharacter> Clothing { get; set; }
+        public DbSet<Inventory> Inventory { get; set; }
+        public DbSet<Clothing> Clothing { get; set; }
+        public DbSet<Armor> Armor { get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<Food> Food { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

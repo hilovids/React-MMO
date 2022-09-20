@@ -1,4 +1,5 @@
 ﻿using TBMMO_Backend.Data;
+using TBMMO_Backend.Models.Items;
 
 namespace TBMMO_Backend.Models.PlayerCharacter
 {
@@ -6,6 +7,6 @@ namespace TBMMO_Backend.Models.PlayerCharacter
     {
         public int Id { get; set; }
         public string PlayerCharacterName { get; set; }
-        public virtual IEnumerable<IWearable> EquippedItems { get; set; }
+        public virtual IEnumerable<Armor> EquippedItems { get; set; }
     }
 }
