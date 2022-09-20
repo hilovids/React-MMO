@@ -8,7 +8,7 @@ namespace TBMMO_Backend.Models.PlayerCharacter
         [Key]
         // hash names and keys when entering them into the database
         public string Name { get; set; }
-        public string? Password { get; set; }
+        public string? Password { get; set; } // hashed password
         public string Salt { get; set; }
         public virtual SkillSheet Skills { get; set; }
         public virtual ProfessionSheet Professions { get; set; }
