@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TBMMO_Backend.Models;
 using TBMMO_Backend.Models.Items;
 using TBMMO_Backend.Models.PlayerCharacter;
 
@@ -16,6 +17,14 @@ namespace TBMMO_Backend
         public DbSet<Armor> Armor { get; set; }
         public DbSet<Item> Items { get; set; }
         public DbSet<Food> Food { get; set; }
+        public DbSet<Bag> Bags { get; set; }
+        public DbSet<PlayerSkill> PlayerSkills { get; set; }
+        public DbSet<Skill> Skills { get; set; }
+        public DbSet<PlayerRelationship> PlayerRelationships { get; set; }
+        public DbSet<PlayerProfession> PlayerProfessions { get; set; }
+        public DbSet<Profession> Professions { get; set; }
+
+        // add tables for locations, organizations, and NPCs
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
